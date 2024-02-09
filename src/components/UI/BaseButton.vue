@@ -1,21 +1,21 @@
 <template>
-    <div>
-            <button :class="mode">
-                <slot></slot>
-            </button>
-    </div>
+  <div>
+    <button :class="mode">
+      <slot></slot>
+    </button>
+  </div>
 </template>
 <script>
 export default {
-    props:['mode']
-}
+  props: ["mode"],
+};
 </script>
 <style scoped>
-div{
-    display: inline-block;
-    padding: 10px;
+div {
+  display: inline-block;
+  padding: 10px;
 }
-    button {
+button {
   padding: 0.75rem 1.5rem;
   font-family: inherit;
   background-color: #3a0061;
@@ -23,8 +23,7 @@ div{
   color: white;
   cursor: pointer;
   border-radius: 20px;
-  transition: .3s;
-
+  transition: 0.3s;
 }
 
 button:hover,
@@ -43,5 +42,4 @@ button:active {
 .flat:active {
   background-color: #edd2ff;
 }
-
 </style>
